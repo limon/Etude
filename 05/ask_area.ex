@@ -23,7 +23,7 @@ defmodule AskArea do
       [ param1, param2 ] = input_params(shape)
       IO.puts Geom.area(shape, param1, param2)
     catch
-      { :invalid_shape, x } -> IO.puts "Unkown shape #{x}"
+      { :invalid_shape, x } -> IO.puts "Unknown shape #{x}"
       :invalid_params -> IO.puts "Both params must be numbers and greater than or equal to zero."
     end
   end
